@@ -86,10 +86,6 @@ input[type=file].file-input-hidden{position:absolute;width:0.1px;height:0.1px;op
       <div class="connection-help-title">Port in use</div>
       <div class="connection-help-item">Please close other apps using this port (e.g. serial monitor, another upgrade page or terminal), then click Connect again.</div>
     </div>
-    <div style="margin-top:12px">
-      <button class="btn-success" id="btnConn" onclick="connectPort()">Connect</button>
-      <button class="btn-danger" id="btnDis" onclick="disconnectPort()" style="display:none">Disconnect</button>
-    </div>
     <div id="connectionStatus" style="display:none" class="connection-status">
       <div class="status-text" id="portStatusText"></div>
       <div class="chip-info" id="chipInfo"></div>
@@ -104,6 +100,10 @@ input[type=file].file-input-hidden{position:absolute;width:0.1px;height:0.1px;op
     <div id="bootModeError" style="display:none;margin-top:12px;padding:15px;background:#fce4ec;border:1px solid #f48fb1;border-radius:4px;color:#880e4f;font-size:13px;line-height:1.6">
       <div style="font-weight:600;margin-bottom:8px;font-size:14px">Fail to enter bootloader mode</div>
       <div style="margin-top:8px">• Click "Disconnect",Remove the dongle and re-insert it,Select the correct UART port to connect</div>
+    </div>
+    <div style="margin-top:12px">
+      <button class="btn-success" id="btnConn" onclick="connectPort()">Connect</button>
+      <button class="btn-danger" id="btnDis" onclick="disconnectPort()" style="display:none">Disconnect</button>
     </div>
   </div>
 
